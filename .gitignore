@@ -1,0 +1,28 @@
+# Local data and experiment artifacts stay on disk, never in Git.
+data/
+log/
+saved/
+runs/
+recommend_topk/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.zip
+*.tar.gz
+__pycache__/
+.pytest_cache/
+.idea/
+.codegraph/
+.reasonix/
+*.log
+err.txt
+.venv/
+build/
+dist/
+*.egg-info/
+# Preserve local research drafts without publishing them with the code.
+reasonix.toml
+/开题思路_*.md
+/开题思路_*.pdf

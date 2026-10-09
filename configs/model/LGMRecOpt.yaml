@@ -1,0 +1,28 @@
+# Research starting settings, NOT validated best hyperparameters.
+# Shared settings apply to every variant, including the LGMRec reference.
+embedding_size: 64
+n_ui_layers: 4
+n_mm_layers: 2
+n_hyper_layer: 1
+hyper_num: 4
+keep_rate: 0.5
+alpha: 0.1
+assignment_temperature: 0.2
+cl_weight: 0.0001
+reg_weight: 0.000001
+learning_rate: 0.0005
+weight_decay: 0.00001
+batch_size: 512
+epochs: 500
+patience: 20
+eval_batch_size: 128
+item_chunk_size: 4096
+topk: [5, 10, 20, 50]
+selection_metric: recall@20
+# New hypothesis settings; must be selected on validation, not TEST.
+score_temperature: 0.2
+prototype_weight: 0.1
+role_weight: 0.1
+readout: candidate
+auxiliary: role
+incidence_mode: learned

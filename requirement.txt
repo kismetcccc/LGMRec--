@@ -1,0 +1,15 @@
+# Recommended Python: 3.9-3.11
+#
+# For CUDA training, install torch/torchvision with the CUDA wheel that matches
+# your driver first. The pinned versions below are stable for this codebase.
+
+numpy>=1.23,<2.0
+pandas>=1.5,<2.3
+scipy>=1.9,<1.13
+torch==2.0.1
+torchvision==0.15.2
+tqdm>=4.64,<5.0
+PyYAML>=6.0,<7.0
+matplotlib>=3.6,<3.9
+Pillow>=9.4,<11.0
+numexpr>=2.8,<3.0
